@@ -1,0 +1,25 @@
+body {
+	background-color: #e7e7e7;
+    font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    margin: 0;
+}
+
+.card{
+	margin: 30px auto;
+	border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.12);
+    width: 600px;
+    padding: 30px;
+   
+}
+
+
+
+}
+
+h1{
+	margin: 0;
+}
