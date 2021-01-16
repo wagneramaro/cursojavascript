@@ -12,6 +12,29 @@
 	<input type="text" name="texto" id="campo">
 </div>
 
+<div class="card">
+	<button onclick="alterar();">Trocar Texto</button>
+	<p id="trocar">Texto para alterar com função</p>
+
+	
+</div>
+
+<div class="card" id="card3" onmouseover="console.log('Passou o mouse');" onmouseout="console.log('Tirou o mouse do card');" onclick="console.log('Clicou');">
+	<center>
+		<h2>Eventos do Mouse</h2>
+		<p>Obs.: Ver Console.</p>
+	</center>
+</div>
+
+<div class="card" id="eventoteclado">
+	<center>
+		<h2>Eventos de Teclado</h2>
+		<input onkeyup="digitou(event);" type="text" name="teste" id="inputdeteste" placeholder="Digite seu texto aqui.">
+	</center>
+</div>
+
+
+
 <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
