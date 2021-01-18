@@ -26,3 +26,30 @@ function digitou(e){
         console.log(texto);
     }
 }
+
+//aulo de mudança de estilos
+function vermelho(){
+    limpar();
+    document.getElementById("mudarcor").classList.add('vermelho');
+}
+
+function azul(){
+    limpar();
+    document.getElementById("mudarcor").classList.add('azul');
+}
+
+function verde(){
+    limpar();
+    document.getElementById("mudarcor").classList.add('verde');
+}
+
+function limpar(){
+    document.getElementById("mudarcor").classList.remove("vermelho");
+    document.getElementById("mudarcor").classList.remove("verde");
+    document.getElementById("mudarcor").classList.remove("azul");
+}
+
+function mostrarTelefone(elemento){
+    elemento.style.display = "none";
+    document.getElementById("telefone").style.display = "block";
+}

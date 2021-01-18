@@ -43,3 +43,23 @@ input{
     font-size: 13px;
     box-shadow: 0 1px 2px 0 rgba(0,0,0,.12);
 }
+
+.vermelho {
+background-color: crimson;
+color: #fff;
+}
+
+.azul{
+    background-color: cyan;
+    color: #000;
+}
+
+.verde{
+    background-color: lawngreen;
+    color:#000;
+
+}
+
+#telefone{
+    display: none;
+}
