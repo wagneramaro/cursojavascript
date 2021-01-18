@@ -53,3 +53,103 @@ function mostrarTelefone(elemento){
     elemento.style.display = "none";
     document.getElementById("telefone").style.display = "block";
 }
+
+
+//CRIAÇÃO DE ARRAYS
+
+let carros1 = ["Palio", "Uno", "HB20"];
+
+let carros = [
+    "Carro2",
+    "Carro3",
+    function(){
+        console.log("Função Dentor do Array");
+    }
+];
+
+//para acessar a função dentro do array
+carros[2]();
+
+
+//OBJETOS
+let carroOB = {
+    nome:"Fiat",
+    modelo:"Uno",
+    peso:'800kg',
+    ligado:false,
+    ligar:function(){
+        this.ligado = true;
+        console.log("VRUM VRUM!");
+    },
+    acelerar:function(){
+        if(this.ligado == true){
+            console.log("Raammmmmmmmmmm!");
+        } else {
+            console.log("Ligue o "+ this.modelo +" antes de acelerar");
+        }
+        
+    }
+
+};
+
+//exibir item do objeto
+console.log("Modelo " + carroOB.nome);
+
+carroOB.acelerar();
+
+//array de objetos
+let teste = [
+    {nome:'Fiat', modelo:'Palio'},
+    {nome:'Toyota', modelo:'Corolla'}
+]
+
+console.log(teste[1].nome);
+
+
+//switch
+function exibirdia(valor){
+
+    let frase = "";
+   
+        switch (valor) {
+            case '1':
+            case '7':
+                frase = "Hoje é final de semana";
+                break;
+        
+            default:
+                frase = "Dia de semana, bora trabalhar";
+                break;
+        }
+        
+
+  
+
+    document.getElementById("resposta-semana").innerHTML = frase;
+
+}
+
+
+//FOR
+
+let cont = '';
+
+for (let i = 0; i < 50; i++){
+    cont += "<div style='padding:5px; position:relative; width: 50px;'>" + i + "<br/></div>";
+}
+
+document.getElementById("demo").innerHTML = cont;
+
+
+// FOR DE ARRAY
+let carroArray = ['Ferrari', 'Fusca', 'Palio', 'Corolla'];
+
+let html = '<ul>';
+
+for(let i in carroArray){
+ html += '<li>'+ carroArray[i] + '</li>';
+}
+
+html += '</ul>';
+
+document.getElementById("demo2").innerHTML = html;
