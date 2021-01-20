@@ -153,19 +153,3 @@ for(let i in carroArray){
 html += '</ul>';
 
 document.getElementById("demo2").innerHTML = html;
-
-
-// WHILE
-
-let c = 0;
-let demow = "";
-
-while(c < 30){
-  
-      demow += "Valor de C é: " + c + "<br>";
-    c++; 
- 
-    
-}
-
-document.getElementById("demowhile").innerHTML = demow;
